@@ -1,0 +1,76 @@
+/*Universal Styles*/
+html {
+  font-size: 16px;
+  font-family: helvetica, sans-serif;
+}
+body {
+
+}
+header {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div {
+  margin-left: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header div img {
+  width: 2.5rem;
+}
+header .colmar {
+  font-size: 2rem;
+  font-weight: bold;
+}
+header .academy {
+  font-size: 2rem;
+  font-weight: 50;
+  opacity: .8;
+}
+header nav {
+  margin-right: 1.8rem;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav li {
+  margin-left: 1rem;
+}
+header nav .mobile {
+  display: none;
+}
+@media only screen and (max-width: 730px) {
+  header {
+    justify-content: center;
+    width: 100%;
+  }
+  header div {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav .desktop {
+    display: none;
+  }
+  header nav ul.mobile {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  header nav .mobile li {
+    width: 2rem;
+    height: 2rem;
+  }
+  header nav .mobile img {
+    width: 100%;
+  }
+}
